@@ -1,0 +1,91 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Adot",
+        "description": "test from adot",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:8000",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "POI",
+            "description": "Route for POI operation"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/poi": {
+            "post": {
+                "tags": ["POI"],
+                "description": "Find the nearest POI",
+                "parameters": [
+                    {
+                        "name": "coordinate",
+                        "in": "body",
+                        "description": "GPS coordinate of poi",
+                        "schema": {
+                            "$ref": "#/definitions/POI"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "response description"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "POI": {
+            "required": [ "coordinates" ],
+            "properties": {
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "lat": {
+                                "type": "float"
+                            },
+                            "lon": {
+                                "type": "float"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "example": [
+                       {
+                         "lat": 48.86,
+                         "lon": 2.35,
+                         "name": "Chatelet"
+                       },
+                       {
+                         "lat": 48.8759992,
+                         "lon": 2.3481253,
+                         "name": "Arc de triomphe"
+                       }
+                    ]
+                }
+            }
+        }
+    }
+}
