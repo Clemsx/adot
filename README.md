@@ -13,7 +13,7 @@ You can now access to the swagger and inspect available route
 Swagger is at http://localhost:8000/adot/v1/explorer/
 There is already some testing data available for you, you can simply click on "Try it out" and send the object data and see the result
 
-![ScreenShot](/test-technique-adotmob/swagger.png)
+![ScreenShot](/swagger.png)
 
 
 ## Initial setup
