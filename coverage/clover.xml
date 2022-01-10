@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1637835051073" clover="3.2.0">
-  <project timestamp="1637835051073" name="All files">
+<coverage generated="1638456243606" clover="3.2.0">
+  <project timestamp="1638456243606" name="All files">
     <metrics statements="131" coveredstatements="75" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0" elements="137" coveredelements="75" complexity="0" loc="131" ncloc="131" packages="1" files="1" classes="1"/>
     <file name="posts.ts" path="/Users/clemsx/github/test-technique-adotmob/src/controllers/posts.ts">
       <metrics statements="131" coveredstatements="75" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
